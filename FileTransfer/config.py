@@ -5,5 +5,5 @@ FILE_TYPES = {
     'documents': ['doc', 'docx', 'csv', 'pdf']
 }
 
-AWS_S3_BUCKET = 'your-aws-s3-bucket-name'
+AWS_S3_BUCKET = 'mahafiletransferbucket'
 GCS_BUCKET = 'your-gcs-bucket-name'

@@ -16,8 +16,10 @@ def process_files(directory):
             _, file_extension = os.path.splitext(file)
 
             if file_extension[1:] in FILE_TYPES['images'] + FILE_TYPES['media']:
+                logging.info(f"Uploading {file_path} to AWS S3 bucket {AWS_S3_BUCKET}.")
                 upload_to_s3(file_path, AWS_S3_BUCKET)
             elif file_extension[1:] in FILE_TYPES['documents']:
+                logging.info(f"Uploading {file_path} to Google Cloud Storage bucket {GCS_BUCKET}.")
                 upload_to_gcs(file_path, GCS_BUCKET)
             else:
                 logging.warning(f"Unsupported file type: {file}")
@@ -34,4 +36,5 @@ if __name__ == "__main__":
     current_directory = os.getcwd()
     log_file_path = os.path.join(current_directory,"logs.log")
     logging.basicConfig(filename=log_file_path,level=logging.INFO)
+
     transfer_files()
