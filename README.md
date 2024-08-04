@@ -1,6 +1,6 @@
 **File Transfer Module**
 
-This module reads all files from a directory and its subdirectories, uploads images and media files to AWS S3, and documents to Google Cloud Storage and handles high volume of data.
+The File Transfer Module is a Python package designed to efficiently manage and automate the transfer of various file types from a specified directory (and its subdirectories) to cloud storage services. The module categorizes and uploads image and media files to Amazon Web Services (AWS) S3, and document files to Google Cloud Storage (GCS). This is especially useful for applications dealing with a large number of files, ensuring efficient, scalable, and automated file management.
 
 **Set Up Your Environment**
 Clone the Repository:
