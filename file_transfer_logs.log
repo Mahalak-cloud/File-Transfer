@@ -1,0 +1,14 @@
+2024-08-04 13:16:31,597 - root - INFO - Starting file transfer process for directory: C:\Users\Maha\AWS_Test
+2024-08-04 13:16:31,597 - root - INFO - Uploading C:\Users\Maha\AWS_Test\download (1).jpg to AWS S3 bucket mahafiletransferbucket.
+2024-08-04 13:16:31,597 - root - INFO - Uploading C:\Users\Maha\AWS_Test\Water Drop Message Ringtone   Sms Ringtone   Sms Ringtone Water Drop   Notification Ringtone.mp3 to AWS S3 bucket mahafiletransferbucket.
+2024-08-04 13:16:31,615 - root - INFO - Uploading C:\Users\Maha\AWS_Test\images\image.png to AWS S3 bucket mahafiletransferbucket.
+2024-08-04 13:16:31,622 - root - INFO - Uploading C:\Users\Maha\AWS_Test\images\image001.png to AWS S3 bucket mahafiletransferbucket.
+2024-08-04 13:16:31,669 - botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-08-04 13:16:31,675 - botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-08-04 13:16:31,691 - botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-08-04 13:16:31,691 - botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-08-04 13:16:33,972 - root - INFO - Successfully uploaded C:\Users\Maha\AWS_Test\download (1).jpg to S3 bucket mahafiletransferbucket with key download (1).jpg.
+2024-08-04 13:16:34,176 - root - INFO - Successfully uploaded C:\Users\Maha\AWS_Test\images\image.png to S3 bucket mahafiletransferbucket with key images/image.png.
+2024-08-04 13:16:34,228 - root - INFO - Successfully uploaded C:\Users\Maha\AWS_Test\images\image001.png to S3 bucket mahafiletransferbucket with key images/image001.png.
+2024-08-04 13:16:34,858 - root - INFO - Successfully uploaded C:\Users\Maha\AWS_Test\Water Drop Message Ringtone   Sms Ringtone   Sms Ringtone Water Drop   Notification Ringtone.mp3 to S3 bucket mahafiletransferbucket with key Water Drop Message Ringtone   Sms Ringtone   Sms Ringtone Water Drop   Notification Ringtone.mp3.
+2024-08-04 13:16:34,873 - root - INFO - File transfer process completed.
