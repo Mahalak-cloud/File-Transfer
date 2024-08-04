@@ -5,8 +5,8 @@ The File Transfer Module is a Python package designed to efficiently manage and 
 **Set Up Your Environment**
 Clone the Repository:
 
-git clone <repository-url>
-cd <repository-name>
+git clone "repository-url"
+cd "repository-name"
 
 **Create and Activate a Virtual Environment**
 
