@@ -5,6 +5,16 @@ from FileTransfer.s3_uploader import upload_to_s3
 from FileTransfer.gcs_uploader import upload_to_gcs
 from FileTransfer.config import FILE_TYPES, AWS_S3_BUCKET, GCS_BUCKET
 
+def setup_logging():
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+        handlers=[
+            logging.StreamHandler(sys.stdout),
+            logging.FileHandler("file_transfer.log")
+        ]
+    )
+
 def process_files(directory):
     if not os.path.isdir(directory):
         logging.error(f"The directory {directory} does not exist.")
@@ -30,11 +40,10 @@ def transfer_files():
         sys.exit(1)
 
     directory = sys.argv[1]
+    logging.info(f"Starting file transfer process for directory: {directory}")
     process_files(directory)
+    logging.info("File transfer process completed.")
 
 if __name__ == "__main__":
-    current_directory = os.getcwd()
-    log_file_path = os.path.join(current_directory,"logs.log")
-    logging.basicConfig(filename=log_file_path,level=logging.INFO)
-
+    setup_logging()
     transfer_files()
